@@ -3,11 +3,9 @@ This is the GitHub for MSDS 605, where we focus on MLOps.
 
 ## File Structure
 ```
-├── README.md 
-├── data
+├── README.md
 ├── labs
 │   ├── Lab1screenshot.png
 │   └── Lab_1_development.ipynb
-├── models
 └── requirements.txt
 ```
