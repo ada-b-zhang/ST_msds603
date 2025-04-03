@@ -1,0 +1,6 @@
+features:
+  chi2percentile: 50
+  data_path: data/breast_cancer.csv
+  target_str: Diagnosis
+  test_size: 0.2
+  random_state: 42

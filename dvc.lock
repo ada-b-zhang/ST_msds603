@@ -1,30 +1,37 @@
 schema: '2.0'
 stages:
   prepare:
-    cmd: python src/create_features.py
+    cmd: python src/preprocessing.py
     deps:
-    - path: data/adult.data
+    - path: data/breast_cancer.csv
       hash: md5
-      md5: 5d7c39d7b8804f071cdd1f2a7c460872
-      size: 3974305
-    - path: data/adult.test
+      md5: 48a41fe4612d6aca0c1616131957b65a
+      size: 123415
+    - path: params.yaml
       hash: md5
-      md5: 366c746021dc50ad9d933d2817612fc9
-      size: 2003132
-    - path: src/create_features.py
+      md5: 7ec2c95ee97aa0e538bc4fbd63b71949
+      size: 127
+    - path: src/preprocessing.py
       hash: md5
-      md5: b93aea27ba45f8b24bdd52928f1f2b99
-      size: 2564
+      md5: 453ae29c0920887dde06596484ba3754
+      size: 4671
+    params:
+      params.yaml:
+        features.chi2percentile: 50
+        features.data_path: data/breast_cancer.csv
+        features.random_state: 42
+        features.target_str: Diagnosis
+        features.test_size: 0.2
     outs:
+    - path: data/best_cancer_processed_test_data.csv
+      hash: md5
+      md5: 6775d869aa464e9683bf4b8ae82bedee
+      size: 47558
+    - path: data/best_cancer_processed_train_data.csv
+      hash: md5
+      md5: ee55d928aeb2ce802e3c2a18c2d29243
+      size: 189664
     - path: data/pipeline.pkl
       hash: md5
-      md5: 2ff2f4415c961f1b4220d6b141e5f6f1
-      size: 6072
-    - path: data/processed_test_data.csv
-      hash: md5
-      md5: a59c8daac38fe1ca84dda2b458ee762a
-      size: 5409602
-    - path: data/processed_train_data.csv
-      hash: md5
-      md5: adf63b6ce20f7ee74f63d5dabb325226
-      size: 10829967
+      md5: a2337d6bbc4d777fed52bea8f381d779
+      size: 3117
