@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlflow-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mlflow-server
+  template:
+    metadata:
+      labels:
+        app: mlflow-server
+    spec:
+      containers:
+      - name: mlflow-server
+        image: mlflow-server
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 5000
