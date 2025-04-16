@@ -1,10 +1,12 @@
 from metaflow import FlowSpec, step
 
 class Lab6ClassifierTrainFlow(FlowSpec):
+    """ 
+    Train the classifier for iris dataset. 
+    """
 
     @step
     def start(self):
-
         # Imports 
         from sklearn import datasets
         from sklearn.model_selection import train_test_split
@@ -17,7 +19,6 @@ class Lab6ClassifierTrainFlow(FlowSpec):
 
     @step
     def train_rf_classifier(self):
-
         # Train random forest classifier
         from sklearn.ensemble import RandomForestClassifier
 
@@ -27,8 +28,7 @@ class Lab6ClassifierTrainFlow(FlowSpec):
 
     @step
     def train_adaboost_classifier(self):
-
-        # Train AdaBoost classifier because I'm Ada 
+        # Train AdaBoost classifier because 
         from sklearn.ensemble import AdaBoostClassifier
 
         self.model = AdaBoostClassifier(n_estimators=100, random_state=42)
@@ -37,8 +37,7 @@ class Lab6ClassifierTrainFlow(FlowSpec):
 
     @step
     def choose_model(self, inputs):
-
-        # Choose the best model 
+        # Choose a model 
         import mlflow
         mlflow.set_tracking_uri('https://msds603servicename-1092058745718.us-west2.run.app')
         mlflow.set_experiment('metaflow-lab6')
@@ -48,18 +47,24 @@ class Lab6ClassifierTrainFlow(FlowSpec):
 
         self.results = sorted(map(score, inputs), key=lambda x: -x[1])
         self.model = self.results[0][0]
+
+        # Save test data from one of the inputs
+        self.test_data = inputs[0].test_data
+        self.test_labels = inputs[0].test_labels
+
         with mlflow.start_run():
-            mlflow.sklearn.log_model(self.model, artifact_path = 'metaflow_train', registered_model_name="metaflow-iris-model")
-            mlflow.end_run()
+            mlflow.sklearn.log_model(self.model, artifact_path='metaflow_train', registered_model_name="metaflow-iris-model")
+
         self.next(self.end)
 
     @step
     def end(self):
-
-        # Print stuff 
+        # Print scores
         print('Scores:')
-        print('\n'.join('%s %f' % res for res in self.results))
-        print('Model:', self.model)
+        print('\n'.join('%s %f' % (type(res[0]).__name__, res[1]) for res in self.results))
+        print('Best model:', type(self.model).__name__)
+
+        print('Test data shape:', len(self.test_data), 'labels:', len(self.test_labels))
 
 
 if __name__=='__main__':

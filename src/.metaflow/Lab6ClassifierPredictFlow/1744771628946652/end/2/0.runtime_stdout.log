@@ -1,2 +1,0 @@
-[MFLOG|0|2025-04-16T02:47:09.908316Z|runtime|9b0716fd-5a7f-47b5-a5dc-b275576a8481]Model RandomForestClassifier(random_state=42)
-[MFLOG|0|2025-04-16T02:47:09.909640Z|runtime|4a454cf5-9705-49c4-896f-db3ab567a262]Predicted class 0

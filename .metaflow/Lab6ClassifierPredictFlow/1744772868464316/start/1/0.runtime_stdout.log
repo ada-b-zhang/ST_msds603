@@ -1,0 +1,2 @@
+[MFLOG|0|2025-04-16T03:07:48.950702Z|runtime|a9f5026d-b4e6-4e2b-903a-88c0207a5459]Loaded model from training flow Lab6ClassifierTrainFlow/1744772811550561
+[MFLOG|0|2025-04-16T03:07:48.997054Z|runtime|bed7305b-8365-468b-8485-d773b650827c]Test set size: 30 samples

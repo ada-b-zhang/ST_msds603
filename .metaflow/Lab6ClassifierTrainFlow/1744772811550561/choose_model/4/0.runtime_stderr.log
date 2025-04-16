@@ -1,0 +1,6 @@
+[MFLOG|0|2025-04-16T03:06:57.100151Z|runtime|21df1a1b-97b1-4418-8225-01b3fcd49ab4]Registered model 'metaflow-iris-model' already exists. Creating a new version of this model...
+[MFLOG|0|2025-04-16T03:06:57.197758Z|runtime|ebade986-c932-405a-ba7a-a899bc960f4d]2025/04/15 20:06:57 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: metaflow-iris-model, version 3
+[MFLOG|0|2025-04-16T03:06:57.198203Z|runtime|a7dfbc15-5c30-47cf-b179-2432e64083c0]Created version '3' of model 'metaflow-iris-model'.
+[MFLOG|0|2025-04-16T03:06:57.198394Z|runtime|db79cce1-5650-4649-bfd4-74c53a5200eb]2025/04/15 20:06:57 WARNING mlflow.models.model: Input example should be provided to infer model signature if the model signature is not provided when logging the model.
+[MFLOG|0|2025-04-16T03:06:57.247857Z|runtime|4838f4dd-d411-4fa0-9e38-37a79e317a8a]2025/04/15 20:06:57 INFO mlflow.tracking._tracking_service.client: 🏃 View run bedecked-bug-657 at: https://msds603servicename-1092058745718.us-west2.run.app/#/experiments/4/runs/23591f36ade84fbbae0bfa0230034bea.
+[MFLOG|0|2025-04-16T03:06:57.513235Z|runtime|d4a57d7f-110b-4d33-a212-3b27b8037329]2025/04/15 20:06:57 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: https://msds603servicename-1092058745718.us-west2.run.app/#/experiments/4.

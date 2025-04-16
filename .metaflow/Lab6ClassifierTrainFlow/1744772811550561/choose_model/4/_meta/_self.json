@@ -1,0 +1,1 @@
+{"run_number": "1744772811550561", "step_name": "choose_model", "task_id": "4", "flow_id": "Lab6ClassifierTrainFlow", "user_name": "adazhang", "tags": [], "system_tags": ["runtime:dev", "user:adazhang", "python_version:3.12.9", "metaflow_version:2.15.7"], "ts_epoch": 1744772812708}

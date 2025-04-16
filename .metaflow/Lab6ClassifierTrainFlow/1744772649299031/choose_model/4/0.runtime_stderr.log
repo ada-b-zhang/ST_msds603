@@ -1,0 +1,6 @@
+[MFLOG|0|2025-04-16T03:04:15.896617Z|runtime|54886ebb-4ca8-48bf-a0f0-6650a71a9f63]Registered model 'metaflow-iris-model' already exists. Creating a new version of this model...
+[MFLOG|0|2025-04-16T03:04:15.999024Z|runtime|c5423633-d3ad-42c4-8de1-33e82b73a732]2025/04/15 20:04:15 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: metaflow-iris-model, version 2
+[MFLOG|0|2025-04-16T03:04:15.999606Z|runtime|603889c4-5910-4df0-a7f2-d6e45e440ebd]Created version '2' of model 'metaflow-iris-model'.
+[MFLOG|0|2025-04-16T03:04:16.134886Z|runtime|4406ee8d-8580-43b8-a5d9-92adcb02c53e]2025/04/15 20:04:15 WARNING mlflow.models.model: Input example should be provided to infer model signature if the model signature is not provided when logging the model.
+[MFLOG|0|2025-04-16T03:04:16.135529Z|runtime|a928827b-b2ae-4739-bb2a-2984eb2cc108]2025/04/15 20:04:16 INFO mlflow.tracking._tracking_service.client: 🏃 View run industrious-auk-64 at: https://msds603servicename-1092058745718.us-west2.run.app/#/experiments/4/runs/9840714d2804442c9971ecaae7096645.
+[MFLOG|0|2025-04-16T03:04:16.390174Z|runtime|ea45e0aa-dc3b-40b3-ad0d-d2e4fee738ae]2025/04/15 20:04:16 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: https://msds603servicename-1092058745718.us-west2.run.app/#/experiments/4.
