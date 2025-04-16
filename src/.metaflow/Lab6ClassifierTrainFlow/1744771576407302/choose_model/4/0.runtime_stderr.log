@@ -1,0 +1,7 @@
+[MFLOG|0|2025-04-16T02:46:35.900779Z|runtime|45c83a92-0fb4-4b30-a090-b513ac77055e]2025/04/15 19:46:35 INFO mlflow.tracking.fluent: Experiment with name 'metaflow-lab6' does not exist. Creating a new experiment.
+[MFLOG|0|2025-04-16T02:46:43.318875Z|runtime|7b612b78-25ab-4495-8227-9ab80b3cf91f]Successfully registered model 'metaflow-iris-model'.
+[MFLOG|0|2025-04-16T02:46:43.523394Z|runtime|cebf7d92-406b-4e4d-acfc-93a00a54d80d]2025/04/15 19:46:43 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: metaflow-iris-model, version 1
+[MFLOG|0|2025-04-16T02:46:43.524010Z|runtime|4532fef3-fc58-471e-a8ec-386079b08cf3]Created version '1' of model 'metaflow-iris-model'.
+[MFLOG|0|2025-04-16T02:46:43.524287Z|runtime|b25b5e42-e8d1-4fc8-a426-58fd716f0d63]2025/04/15 19:46:43 WARNING mlflow.models.model: Input example should be provided to infer model signature if the model signature is not provided when logging the model.
+[MFLOG|0|2025-04-16T02:46:43.579532Z|runtime|fca40b87-8119-41d1-be57-effac69d2f2d]2025/04/15 19:46:43 INFO mlflow.tracking._tracking_service.client: 🏃 View run amusing-fox-183 at: https://msds603servicename-1092058745718.us-west2.run.app/#/experiments/4/runs/4cf86e12ac6e4a8d9b1c56bfbac9a660.
+[MFLOG|0|2025-04-16T02:46:43.579938Z|runtime|952f3c80-6e1b-4447-b9db-f295d06994ae]2025/04/15 19:46:43 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: https://msds603servicename-1092058745718.us-west2.run.app/#/experiments/4.

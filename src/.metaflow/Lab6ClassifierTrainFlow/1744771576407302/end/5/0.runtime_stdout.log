@@ -1,0 +1,4 @@
+[MFLOG|0|2025-04-16T02:46:43.973611Z|runtime|fcf25763-6691-4bf6-bd57-af9e31d235bf]Scores:
+[MFLOG|0|2025-04-16T02:46:44.323644Z|runtime|0a84728b-ffc0-4dbb-ab31-e676afe27c84]RandomForestClassifier(random_state=42) 1.000000
+[MFLOG|0|2025-04-16T02:46:44.324664Z|runtime|7d7bf309-f321-4372-bca9-1ca6ea9c2076]AdaBoostClassifier(n_estimators=100, random_state=42) 0.900000
+[MFLOG|0|2025-04-16T02:46:44.324750Z|runtime|c6a8a3be-9df5-4c29-94a2-b890b052949f]Model: RandomForestClassifier(random_state=42)

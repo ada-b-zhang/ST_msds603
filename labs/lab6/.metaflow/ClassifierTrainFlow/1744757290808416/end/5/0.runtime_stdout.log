@@ -1,0 +1,4 @@
+[MFLOG|0|2025-04-15T22:48:39.679216Z|runtime|2ce8bde1-7f3c-4492-8b04-817d895906e7]Scores:
+[MFLOG|0|2025-04-15T22:48:39.985280Z|runtime|ab875a51-6e1c-4cdb-85ce-c7cccd1a38ad]SVC(kernel='poly') 0.861111
+[MFLOG|0|2025-04-15T22:48:39.985424Z|runtime|995f6e51-eabe-4acf-81cc-8d601df59bd6]KNeighborsClassifier() 0.805556
+[MFLOG|0|2025-04-15T22:48:39.985486Z|runtime|34d1f4af-c3a2-46de-a042-f0cdb48b813d]Model: SVC(kernel='poly')

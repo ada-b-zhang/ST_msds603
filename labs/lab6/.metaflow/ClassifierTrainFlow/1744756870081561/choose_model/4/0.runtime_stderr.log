@@ -1,0 +1,67 @@
+[MFLOG|0|2025-04-15T22:41:12.190726Z|runtime|f5213cf8-5839-48c7-9a49-210a15b50545]<flow ClassifierTrainFlow step choose_model> failed:
+[MFLOG|0|2025-04-15T22:41:12.194700Z|runtime|b6356185-1b4b-4a30-bb36-e0a17e809499]    Internal error
+[MFLOG|0|2025-04-15T22:41:12.195747Z|runtime|1ee1371b-1a34-412e-9e78-573aa5a792e1]Traceback (most recent call last):
+[MFLOG|0|2025-04-15T22:41:12.195787Z|runtime|54c1ec27-659b-4ffa-b9ae-8e27d0275235]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/cli.py", line 611, in main
+[MFLOG|0|2025-04-15T22:41:12.195824Z|runtime|2525d72b-a5c4-4624-bddb-e80686f2d645]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2025-04-15T22:41:12.195855Z|runtime|6c28c66d-2141-4870-85ed-1ae664b19e2d]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2025-04-15T22:41:12.195885Z|runtime|a04ca211-17ef-4488-bc1c-bc62310507a3]    return self.main(args, kwargs)
+[MFLOG|0|2025-04-15T22:41:12.291218Z|runtime|051dd440-9238-4148-8352-da2eae98d202]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-15T22:41:12.291353Z|runtime|3767c772-df36-47ae-8653-ad0ffa2b048f]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2025-04-15T22:41:12.291385Z|runtime|5f204464-14a8-4457-801c-1d25990dd472]    rv = self.invoke(ctx)
+[MFLOG|0|2025-04-15T22:41:12.291410Z|runtime|7b12ca70-2ff5-49ee-b099-e5e91c1479c7]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-15T22:41:12.291433Z|runtime|dd752ba0-16c5-4ac3-aac1-382f2adfe469]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/cli_components/utils.py", line 69, in invoke
+[MFLOG|0|2025-04-15T22:41:12.291453Z|runtime|97408f7f-8df3-4c48-8403-381a97b512cf]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2025-04-15T22:41:12.291474Z|runtime|22e8df2c-03f4-4280-82e3-93d4e55305b7]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-15T22:41:12.291496Z|runtime|8446211e-c6dd-4a67-b2c3-664538bd31f8]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2025-04-15T22:41:12.291518Z|runtime|a5c660a8-84a0-45fb-813b-e3d9be57964b]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2025-04-15T22:41:12.291537Z|runtime|02205d4f-1a54-441a-bed3-91b626ecd96b]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-15T22:41:12.291556Z|runtime|f8b5c956-e1f8-4567-ad45-1dca81b3d034]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2025-04-15T22:41:12.291577Z|runtime|ffccc643-ff42-4276-8c24-7907808a3373]    return callback(args, kwargs)
+[MFLOG|0|2025-04-15T22:41:12.291597Z|runtime|a26470aa-015b-4798-b0bc-7aa8c7deb689]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-15T22:41:12.291617Z|runtime|a8c52139-c376-407c-8e16-dab4547a8bfe]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2025-04-15T22:41:12.291636Z|runtime|3302e3e2-52f4-4da4-bd41-5dcd78c03eb4]    return func(args, kwargs)
+[MFLOG|0|2025-04-15T22:41:12.291654Z|runtime|37db2f4c-7a5e-4d16-9469-57ef0e44f744]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-15T22:41:12.291672Z|runtime|0df2a19d-3560-4dae-8a5b-917e6eb84646]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2025-04-15T22:41:12.291697Z|runtime|48e24ec0-a195-423a-8c0b-12eb5229ab64]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2025-04-15T22:41:12.291718Z|runtime|92a047a1-7941-49c3-8a0a-bbde00a35609]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-15T22:41:12.291736Z|runtime|b98f008a-8ec5-4424-bfae-b7a7bae225db]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/cli_components/step_cmd.py", line 167, in step
+[MFLOG|0|2025-04-15T22:41:12.291756Z|runtime|cb937499-e323-4d7f-93ae-b0390d0df9d5]    task.run_step(
+[MFLOG|0|2025-04-15T22:41:12.291777Z|runtime|686bfec0-861f-468f-b0a5-86c00107f265]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/task.py", line 670, in run_step
+[MFLOG|0|2025-04-15T22:41:12.291794Z|runtime|16d40520-29c5-4e07-bbf8-fef7476ab07c]    self._exec_step_function(step_func, input_obj)
+[MFLOG|0|2025-04-15T22:41:12.291811Z|runtime|8fb1ca09-4221-4b5a-b3d3-5ff47a0f9f66]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/task.py", line 64, in _exec_step_function
+[MFLOG|0|2025-04-15T22:41:12.291828Z|runtime|78385e5e-4988-4feb-a255-0ecc3f555bfe]    step_function(input_obj)
+[MFLOG|0|2025-04-15T22:41:12.291846Z|runtime|fb7e798a-f7ff-4196-ae69-c81fd6ed6318]  File "/Users/adazhang/USF/spring2/ST_msds603/labs/lab6/classifier_train.py", line 35, in choose_model
+[MFLOG|0|2025-04-15T22:41:12.291863Z|runtime|d2a703ff-cd4d-4b30-b097-1e52cb5e7023]    mlflow.set_experiment('metaflow-experiment')
+[MFLOG|0|2025-04-15T22:41:12.291880Z|runtime|a3096351-c6f5-4616-8527-c17a56ea2b38]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/mlflow/tracking/fluent.py", line 143, in set_experiment
+[MFLOG|0|2025-04-15T22:41:12.291897Z|runtime|a58a1c43-2ef1-4f5f-b1ef-3bd6e4df9467]    experiment = client.get_experiment_by_name(experiment_name)
+[MFLOG|0|2025-04-15T22:41:12.291914Z|runtime|2b871fc3-9dda-4b7d-8577-e11f0fb2d7c9]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-15T22:41:12.291934Z|runtime|024feee9-0094-4eeb-92b5-5983ca65a6dc]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/mlflow/tracking/client.py", line 1240, in get_experiment_by_name
+[MFLOG|0|2025-04-15T22:41:12.291952Z|runtime|05f981d1-de2a-4a5a-a76b-e3c7bb4fc507]    return self._tracking_client.get_experiment_by_name(name)
+[MFLOG|0|2025-04-15T22:41:12.291969Z|runtime|4e32d061-8c22-4402-aebb-2c268535319f]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-15T22:41:12.291988Z|runtime|12dc4b13-4ea0-411c-a9c5-f18bc1a43cd4]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/mlflow/tracking/_tracking_service/client.py", line 484, in get_experiment_by_name
+[MFLOG|0|2025-04-15T22:41:12.292006Z|runtime|2b7afcf4-5b53-4107-9390-277fd2d33244]    return self.store.get_experiment_by_name(name)
+[MFLOG|0|2025-04-15T22:41:12.292023Z|runtime|c0902c3f-d77d-4889-ac8f-27acc4dc6cb9]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-15T22:41:12.292040Z|runtime|3c592787-b38d-4227-9b38-7cae6ea62cf2]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/mlflow/store/tracking/rest_store.py", line 518, in get_experiment_by_name
+[MFLOG|0|2025-04-15T22:41:12.292056Z|runtime|1711ab46-be2f-4528-81e9-ff965248f519]    response_proto = self._call_endpoint(GetExperimentByName, req_body)
+[MFLOG|0|2025-04-15T22:41:12.292074Z|runtime|8026fd8e-a178-4299-8e34-7fec50022d4b]                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-15T22:41:12.292091Z|runtime|c8b541ba-2955-456d-b0a7-b93a0e32cd5c]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/mlflow/store/tracking/rest_store.py", line 81, in _call_endpoint
+[MFLOG|0|2025-04-15T22:41:12.292108Z|runtime|7e34abf1-18ff-45a0-9fac-4dd518d85dc9]    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+[MFLOG|0|2025-04-15T22:41:12.292125Z|runtime|6204efde-0b26-496b-9013-9518cede2381]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-15T22:41:12.292142Z|runtime|404eb0ac-db44-4fc9-a7cc-e4f0484a4cd4]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/mlflow/utils/rest_utils.py", line 362, in call_endpoint
+[MFLOG|0|2025-04-15T22:41:12.292163Z|runtime|0cbcd60a-6372-4491-8106-7813ed447728]    response = verify_rest_response(response, endpoint)
+[MFLOG|0|2025-04-15T22:41:12.292179Z|runtime|d1134198-b613-4cc4-8203-d1d7f9feeb0c]               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-15T22:41:12.292198Z|runtime|2d15484c-bf79-42f3-9323-5dbc856ec758]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/mlflow/utils/rest_utils.py", line 238, in verify_rest_response
+[MFLOG|0|2025-04-15T22:41:12.292215Z|runtime|aa923403-4a16-4c3b-8ede-086a6ea157e6]    raise MlflowException(
+[MFLOG|0|2025-04-15T22:41:12.292232Z|runtime|6a2f4fb8-735b-40bd-8a16-93695af28459]mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/experiments/get-by-name failed with error code 404 != 200. Response body: '
+[MFLOG|0|2025-04-15T22:41:12.292251Z|runtime|0e5ff21e-9fc8-4373-89a7-aa920ddb5be4]<html><head>
+[MFLOG|0|2025-04-15T22:41:12.292269Z|runtime|2ab5d167-15b9-4d38-b029-030848a20ae0]<meta http-equiv="content-type" content="text/html;charset=utf-8">
+[MFLOG|0|2025-04-15T22:41:12.292287Z|runtime|ee0c7131-15f2-4bc9-858a-432dff66b997]<title>404 Page not found</title>
+[MFLOG|0|2025-04-15T22:41:12.292304Z|runtime|18113dcc-8aae-47ac-9828-939972c0b0da]</head>
+[MFLOG|0|2025-04-15T22:41:12.292323Z|runtime|749ee341-bf5d-4869-a8d8-c98e62148ca5]<body text=#000000 bgcolor=#ffffff>
+[MFLOG|0|2025-04-15T22:41:12.292339Z|runtime|c25f7f3e-e9da-411a-8ea5-c93b3f3f626f]<h1>Error: Page not found</h1>
+[MFLOG|0|2025-04-15T22:41:12.292373Z|runtime|a7487184-788e-4ec1-b490-79f5486953fe]<h2>The requested URL was not found on this server.</h2>
+[MFLOG|0|2025-04-15T22:41:12.292390Z|runtime|5ce9d9d6-8323-409d-92c2-78bc4b40a068]<h2></h2>
+[MFLOG|0|2025-04-15T22:41:12.292408Z|runtime|7730bd16-1a85-49a0-a414-337dd2e98e95]</body></html>
+[MFLOG|0|2025-04-15T22:41:12.292424Z|runtime|ae212991-a381-4591-a95f-4303e4556b4c]'
+[MFLOG|0|2025-04-15T22:41:12.292442Z|runtime|47c9baf4-75e2-4202-88e5-862d9a7c27c6]
+[MFLOG|0|2025-04-15T22:41:12.292684Z|runtime|0ef326a0-69b6-4231-8232-d7dea9212349]Task failed.

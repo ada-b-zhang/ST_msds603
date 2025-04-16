@@ -1,0 +1,7 @@
+[MFLOG|0|2025-04-15T22:48:31.563118Z|runtime|2ff9648b-42a1-4ea3-a42d-2c1b63b1ff36]2025/04/15 15:48:31 INFO mlflow.tracking.fluent: Experiment with name 'metaflow-experiment' does not exist. Creating a new experiment.
+[MFLOG|0|2025-04-15T22:48:39.055121Z|runtime|43525828-b1c0-4dee-b0ea-39deef0f162a]Successfully registered model 'metaflow-wine-model'.
+[MFLOG|0|2025-04-15T22:48:39.211761Z|runtime|7c11cf82-e1e2-49c6-9e38-9ae4116596cf]2025/04/15 15:48:39 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: metaflow-wine-model, version 1
+[MFLOG|0|2025-04-15T22:48:39.212278Z|runtime|b05069d9-dd35-40e6-99a4-c524deb38d91]Created version '1' of model 'metaflow-wine-model'.
+[MFLOG|0|2025-04-15T22:48:39.276909Z|runtime|7cc98e1d-9150-45d0-b5f7-51aa5cb405bb]2025/04/15 15:48:39 WARNING mlflow.models.model: Input example should be provided to infer model signature if the model signature is not provided when logging the model.
+[MFLOG|0|2025-04-15T22:48:39.277253Z|runtime|b1540e25-5e31-49e2-8435-0b876d89bf15]2025/04/15 15:48:39 INFO mlflow.tracking._tracking_service.client: 🏃 View run intrigued-goat-752 at: https://msds603servicename-1092058745718.us-west2.run.app/#/experiments/3/runs/356f328fc52b4bd3b742cba2d9727819.
+[MFLOG|0|2025-04-15T22:48:39.560205Z|runtime|84c658f5-93c2-443c-b4d2-64fe5abfa075]2025/04/15 15:48:39 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: https://msds603servicename-1092058745718.us-west2.run.app/#/experiments/3.
