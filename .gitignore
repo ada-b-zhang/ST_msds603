@@ -1,1 +1,6 @@
 src/.metaflow/
+.metaflow/ClassifierTrainFlow/
+.metaflowconfig/
+google-cloud-sdk-518.0.0-darwin-x86_64.tar.gz
+google-cloud-sdk/
+metaflow-tools/
