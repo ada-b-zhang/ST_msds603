@@ -4,3 +4,8 @@ src/.metaflow/
 google-cloud-sdk-518.0.0-darwin-x86_64.tar.gz
 google-cloud-sdk/
 metaflow-tools/
+labs/lab8/lab8app/mlruns/
+labs/lab8/lab8app/new-mlruns/
+terraform.tfstate
+.metaflow/Lab8ClassifierTrainFlow/
+Mlruns/
